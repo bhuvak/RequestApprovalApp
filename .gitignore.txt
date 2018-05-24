@@ -1,0 +1,10 @@
+/RequestApprovalTestApp/**/objd/**/*
+/RequestApprovalTestApp/**/obj/**/*
+/RequestApprovalTestApp/**/bin/**/*
+/RequestApprovalTestApp/**/gen/**/*
+/RequestApprovalTestApp/**/*.nuspec
+/RequestApprovalTestApp/**/StyleCop.Cache
+/loc/**/objd/**/*
+/loc/**/obj/**/*
+/.vs
+/.vs/*
