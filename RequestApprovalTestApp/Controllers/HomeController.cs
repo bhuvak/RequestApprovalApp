@@ -20,7 +20,7 @@
         private readonly IAccessTokenGetter accessTokenGetter;
         private readonly ITenantGetter tenantGetter;
 
-        private const string tenantId = "629f581e-6f48-4447-a75e-66789a96f33d"; // 72f988bf-86f1-41af-91ab-2d7cd011db47     629f581e-6f48-4447-a75e-66789a96f33d
+        private const string tenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"; // 72f988bf-86f1-41af-91ab-2d7cd011db47     629f581e-6f48-4447-a75e-66789a96f33d
 
         public HomeController(ISettings settings, IHttpClient httpClient, IAccessTokenGetter accessTokenGetter, ITenantGetter tenantGetter)
         {
@@ -125,7 +125,7 @@
                     {
                         id = "6b845bfa-268a-4377-8187-77fc54662bff",
                         displayName = "Bhuvana",
-                        userPrincipalName = "bhkrishn@microsoft.com"
+                        userPrincipalName = "bhkrishn@microsoft.com",                        
                     }
                 }
             };
@@ -148,7 +148,11 @@
                     "61d92990-8078-4741-b1c9-94b436dee706", // Looks like Any target id is working fine here, validation is not happening. Ask Razvan
                 targetDisplayName = "temp", // request beneficiery  
                 targetUserPrincipalName = "temp@microsoft.com", //,
-                MyCustomField = "Hello world"
+                SupportRequestId = "1234",
+                ResourceId = "234",
+                ApprovalDuration = "4 hours",
+                CorrelationId= "123"
+
             };
 
             var token = this.accessTokenGetter.GetAccessToken(this.settings.RequestApprovalAppId, tenantId);
